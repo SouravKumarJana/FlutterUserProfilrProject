@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'userProfileScreen.dart';
+import 'user_profile_screen.dart';
 
 class UserProfileApp extends StatelessWidget {
   const UserProfileApp({super.key});
