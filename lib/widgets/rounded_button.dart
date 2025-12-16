@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_style_widgets/button_text_style.dart';
 
 class RoundedButton extends StatelessWidget{
   final String btnName;
@@ -33,9 +34,9 @@ class RoundedButton extends StatelessWidget{
         children: [
           icon!,
           SizedBox(width: 12,),
-          Text(btnName, style: textStyle),
+          Text(btnName, style: buttonTextStyle),
         ],
-      ): Text(btnName, style: textStyle),
+      ): Text(btnName, style: buttonTextStyle),
 
       
     );
