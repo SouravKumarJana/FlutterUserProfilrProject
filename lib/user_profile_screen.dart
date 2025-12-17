@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'widgets/card.dart';
 import 'widgets/rounded_button.dart';
 import 'widgets/text_style_widgets/button_text_style.dart';
 import 'widgets/text_style_widgets/text_style.dart';
 import 'widgets/profile_avatar.dart';
+import 'widgets/info_card_stack.dart';
 
 
 
@@ -42,10 +42,7 @@ class UserprofileScreen extends StatelessWidget{
                     const SizedBox(height: 6),
                     SubtitleStyle('username@gmail.com'),
                     SizedBox(height: 20,),
-                    InfoCard(icon: Icons.group, title: 'Followers', value: '1200'),
-                    InfoCard(icon: Icons.person_2, title: 'Following', value: '200'),
-                    InfoCard(icon: Icons.ice_skating, title: 'Posts', value: '353'),
-                    SizedBox(height: 12,),
+                    InfoCardStack(),
                     SizedBox(
                       width: double.infinity,
                       height: 56,
