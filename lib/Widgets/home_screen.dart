@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'firstscreen.dart';
 import 'second_screen.dart';
 import 'bar_stack.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -29,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('App Bar'), centerTitle: true,),
       body: screen[current_index],
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(6),

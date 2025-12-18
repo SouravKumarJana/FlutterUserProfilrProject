@@ -4,10 +4,7 @@ class FirstScreen extends StatelessWidget{
   const FirstScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      appBar: AppBar(title: const Text('First Screen'), centerTitle: true ),
-      body: Container(
+    return Container(
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
@@ -23,8 +20,8 @@ class FirstScreen extends StatelessWidget{
             'Hello World',
             style: TextStyle(color: Colors.white, fontSize: 25),
           ),
+        
         ),
-      ),
 
     );
   }
