@@ -18,23 +18,59 @@ class _SecondScreenState extends State<SecondScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return SafeArea(
+      child: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.grey.shade200, 
+        child: Stack(
           children: [
-            const Text('Pushed the Button to increment the counter'),
-            Text(
-              'Count is: $counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text('Pushed the Button to increment the counter'),
+                  Text(
+                    'Count is: $counter',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                ],
+              ),
             ),
-            SizedBox(height: 30,),
-            FloatingActionButton(
-              onPressed: incrementCounter,
-              tooltip: 'Increment',
-              child: const Icon(Icons.add),
+            Positioned(
+              right: 20,
+              bottom: 20,
+              child: FloatingActionButton(
+                onPressed: incrementCounter,
+                child: const Icon(Icons.add),
+              ),
             ),
           ],
         ),
+      ),
     );
   }
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   return Center(
+  //       child: Column(
+  //         mainAxisAlignment: MainAxisAlignment.center,
+  //         children: [
+  //           const Text('Pushed the Button to increment the counter'),
+  //           Text(
+  //             'Count is: $counter',
+  //             style: Theme.of(context).textTheme.headlineMedium,
+  //           ),
+  //           SizedBox(height: 30),
+  //           FloatingActionButton(
+  //             onPressed: incrementCounter,
+  //             tooltip: 'Increment',
+  //             child: const Icon(Icons.add),
+  //           ),
+  //         ],
+  //       ),
+  //   );
+  // }
+
 }
