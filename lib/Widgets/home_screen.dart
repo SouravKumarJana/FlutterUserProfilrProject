@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> screen = [
     FirstScreen(),
-    SecondScreen(title: 'Dynamic Screen'),
+    SecondScreen(),
     FirstScreen(),
     FirstScreen(),
     FirstScreen()

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatefulWidget {
-  const SecondScreen({super.key, required this.title});
-
-  final String title;
+  const SecondScreen({super.key});
 
   @override
   State<SecondScreen> createState() => _SecondScreenState();
@@ -37,8 +35,6 @@ class _SecondScreenState extends State<SecondScreen> {
             ),
           ],
         ),
-      
-     
     );
   }
 }
