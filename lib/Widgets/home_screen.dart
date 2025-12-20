@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'firstscreen.dart';
 import 'second_screen.dart';
 import 'bar_stack.dart';
+import 'contact_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -15,8 +16,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> screen = [
     FirstScreen(),
+    ContactList(),
     SecondScreen(),
-    FirstScreen(),
     FirstScreen(),
     FirstScreen()
   ];
